@@ -272,3 +272,25 @@ outline:none;
 border-color:#d4af37;
 
 }
+.upload{
+
+background:#111;
+
+border:1px solid #333;
+
+padding:20px;
+
+border-radius:8px;
+
+color:#ddd;
+
+text-align:left;
+
+}
+
+
+.upload input{
+
+margin-top:15px;
+
+}
