@@ -320,3 +320,7 @@ footer{
     justify-content:center;
     align-items:center;
 }
+.contato .btn{
+    display:inline-block;
+    margin:25px auto 35px;
+}
