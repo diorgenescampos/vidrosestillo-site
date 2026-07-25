@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -8,6 +9,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Orçamento | Vidrosestillo</title>
+
+<meta name="description" content="Solicite orçamento de vidros, box para banheiro, fechamento de sacadas e esquadrias de alumínio com a Vidrosestillo.">
 
 <link rel="stylesheet" href="style.css">
 
@@ -33,14 +36,18 @@ Preencha os dados abaixo e nossa equipe entrará em contato.
 
 
 
-<form action="https://formsubmit.co/SEU_EMAIL" method="POST">
+<form 
+action="https://formsubmit.co/SEU_EMAIL"
+method="POST"
+enctype="multipart/form-data">
 
 
 <input 
-type="text" 
+type="text"
 name="nome"
 placeholder="Seu nome"
 required>
+
 
 
 <input 
@@ -51,24 +58,28 @@ required>
 
 
 
-<select name="servico">
+<select name="servico" required>
 
 
-<option>
+<option value="">
 Escolha o serviço
 </option>
+
 
 <option>
 Box para banheiro
 </option>
 
+
 <option>
 Fechamento de sacada
 </option>
 
+
 <option>
 Esquadrias de alumínio
 </option>
+
 
 <option>
 Outro projeto
@@ -79,10 +90,29 @@ Outro projeto
 
 
 
-<textarea 
+<textarea
+
 name="mensagem"
-placeholder="Conte um pouco sobre seu projeto">
+
+placeholder="Conte um pouco sobre seu projeto, medidas aproximadas ou detalhes">
+
 </textarea>
+
+
+
+<label class="upload">
+
+📸 Enviar foto do ambiente
+
+<input
+
+type="file"
+
+name="foto"
+
+accept="image/*">
+
+</label>
 
 
 
@@ -97,7 +127,24 @@ Enviar orçamento
 
 
 
-<br>
+<br><br>
+
+
+
+<a class="btn"
+
+href="https://wa.me/5551995326229?text=Olá%20Vidrosestillo,%20gostaria%20de%20solicitar%20um%20orçamento."
+
+target="_blank">
+
+Falar pelo WhatsApp
+
+</a>
+
+
+
+<br><br>
+
 
 
 <a class="btn" href="index.html">
@@ -107,9 +154,11 @@ Voltar ao site
 </a>
 
 
+
 </div>
 
 </section>
+
 
 
 </body>
