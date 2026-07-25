@@ -80,3 +80,30 @@ flex-wrap:wrap;
 margin-top:30px;
 
 }
+.instagram{
+
+text-align:center;
+
+background:#111;
+
+}
+
+
+.instagram p{
+
+font-size:18px;
+
+color:#ddd;
+
+margin-bottom:30px;
+
+}
+
+
+.instagram-box{
+
+display:flex;
+
+justify-content:center;
+
+}
