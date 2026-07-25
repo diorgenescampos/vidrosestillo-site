@@ -1,236 +1,192 @@
 
-/* ANIMAÇÕES */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
-.card,
-.sobre p,
-.fotos img,
-.contato{
+html{
+    scroll-behavior:smooth;
+}
 
-opacity:0;
+body{
+    background:#080808;
+    color:white;
+}
 
-transform:translateY(40px);
+.container{
+    width:85%;
+    max-width:1200px;
+    margin:auto;
+}
 
-transition:1s;
+section{
+    padding:80px 0;
+}
 
+h2{
+    color:#d4af37;
+    text-align:center;
+    font-size:38px;
+    margin-bottom:30px;
 }
 
 
-.mostrar{
+/* MENU */
 
-opacity:1;
-
-transform:translateY(0);
-
-}
-.frase-destaque{
-
-font-size:18px;
-
-max-width:700px;
-
-margin:20px auto 30px;
-
-color:#ddd;
-
-line-height:1.6;
-
-}
-.categoria{
-
-margin-bottom:70px;
-
+nav{
+    position:absolute;
+    top:0;
+    width:100%;
+    padding:30px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:10;
 }
 
+.logo{
+    color:#d4af37;
+    font-size:28px;
+    font-weight:bold;
+    letter-spacing:3px;
+}
 
-.categoria h3{
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
 
-color:#d4af37;
+nav a{
+    color:white;
+    text-decoration:none;
+}
 
-font-size:26px;
 
-margin-bottom:25px;
+/* CAPA */
 
-text-align:left;
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(
+    rgba(0,0,0,.65),
+    rgba(0,0,0,.85)
+    ),
+    url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c")
+    center/cover;
 
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+
+.hero-content h1{
+    font-size:65px;
+    color:#d4af37;
+    letter-spacing:8px;
+}
+
+
+.hero-content h2{
+    color:white;
+}
+
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#d4af37;
+    color:#000;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:5px;
+    margin-top:20px;
+}
+
+
+/* CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+
+.card{
+    background:#111;
+    padding:30px;
+    border:1px solid #333;
+    border-radius:12px;
+    text-align:center;
+}
+
+
+.card h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+
+/* GALERIA */
+
+.fotos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
 }
 
 
 .fotos img{
-
-cursor:pointer;
-
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:12px;
 }
 
 
-.fotos img:hover{
+/* CONTATO */
 
-filter:brightness(1.15);
-
-}
-.orcamentos{
-
-display:flex;
-
-justify-content:center;
-
-gap:15px;
-
-flex-wrap:wrap;
-
-margin-top:30px;
-
-}
-.instagram{
-
-text-align:center;
-
-background:#111;
-
+.contato{
+    background:#111;
+    text-align:center;
 }
 
 
-.instagram p{
+/* WHATSAPP */
 
-font-size:18px;
-
-color:#ddd;
-
-margin-bottom:30px;
-
+.whatsapp{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    background:#25d366;
+    color:white;
+    padding:15px 25px;
+    border-radius:50px;
+    text-decoration:none;
 }
 
 
-.instagram-box{
-
-display:flex;
-
-justify-content:center;
-
-}
-.depoimentos{
-
-background:#0b0b0b;
-
-text-align:center;
-
-}
-
-
-.depoimentos .card p{
-
-font-style:italic;
-
-color:#ddd;
-
-margin-bottom:20px;
-
-}
-
-
-.depoimentos .card h3{
-
-font-size:16px;
-
-}
-.menu-mobile{
-
-display:none;
-
-cursor:pointer;
-
-}
-
-
-.menu-mobile span{
-
-display:block;
-
-width:30px;
-
-height:3px;
-
-background:#d4af37;
-
-margin:6px;
-
-}
-
-
-
-
-
-@media(max-width:768px){
-
-
-.menu-mobile{
-
-display:block;
-
-}
-
-
-.menu{
-
-position:absolute;
-
-top:80px;
-
-right:20px;
-
-background:#111;
-
-width:220px;
-
-padding:20px;
-
-border-radius:10px;
-
-display:none;
-
-flex-direction:column;
-
-}
-
-
-.menu.ativo{
-
-display:flex;
-
-}
-
-
-}
-/* PÁGINA DE ORÇAMENTO */
+/* ORÇAMENTO */
 
 .orcamento{
-
-min-height:100vh;
-
-background:#080808;
-
-display:flex;
-
-align-items:center;
-
-text-align:center;
-
+    min-height:100vh;
+    background:#080808;
+    text-align:center;
 }
 
 
 .orcamento form{
-
-max-width:600px;
-
-margin:40px auto;
-
-display:flex;
-
-flex-direction:column;
-
-gap:15px;
-
+    max-width:600px;
+    margin:40px auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
 }
-
 
 
 .orcamento input,
@@ -238,59 +194,47 @@ gap:15px;
 .orcamento textarea{
 
 background:#111;
-
 border:1px solid #333;
-
 padding:15px;
-
 border-radius:8px;
-
 color:white;
 
-font-size:16px;
-
 }
-
 
 
 .orcamento textarea{
-
 height:150px;
-
-resize:none;
-
 }
 
 
+/* RODAPÉ */
 
-.orcamento input:focus,
-.orcamento select:focus,
-.orcamento textarea:focus{
-
-outline:none;
-
-border-color:#d4af37;
-
-}
-.upload{
-
-background:#111;
-
-border:1px solid #333;
-
-padding:20px;
-
-border-radius:8px;
-
-color:#ddd;
-
-text-align:left;
-
+footer{
+    background:#000;
+    padding:30px;
+    text-align:center;
+    color:#aaa;
 }
 
 
-.upload input{
+/* CELULAR */
 
-margin-top:15px;
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:40px;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+flex-direction:column;
+}
+
+.container{
+width:90%;
+}
 
 }
