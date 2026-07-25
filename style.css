@@ -67,3 +67,16 @@ cursor:pointer;
 filter:brightness(1.15);
 
 }
+.orcamentos{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+margin-top:30px;
+
+}
