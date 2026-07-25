@@ -35,3 +35,35 @@ color:#ddd;
 line-height:1.6;
 
 }
+.categoria{
+
+margin-bottom:70px;
+
+}
+
+
+.categoria h3{
+
+color:#d4af37;
+
+font-size:26px;
+
+margin-bottom:25px;
+
+text-align:left;
+
+}
+
+
+.fotos img{
+
+cursor:pointer;
+
+}
+
+
+.fotos img:hover{
+
+filter:brightness(1.15);
+
+}
