@@ -297,3 +297,26 @@ footer{
     }
 
 }
+/* INSTAGRAM */
+
+.instagram{
+    text-align:center;
+}
+
+.instagram .container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.instagram p{
+    max-width:600px;
+    margin:15px auto 30px;
+}
+
+.instagram-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
