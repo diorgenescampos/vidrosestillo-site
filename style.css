@@ -200,3 +200,75 @@ display:flex;
 
 
 }
+/* PÁGINA DE ORÇAMENTO */
+
+.orcamento{
+
+min-height:100vh;
+
+background:#080808;
+
+display:flex;
+
+align-items:center;
+
+text-align:center;
+
+}
+
+
+.orcamento form{
+
+max-width:600px;
+
+margin:40px auto;
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+
+
+.orcamento input,
+.orcamento select,
+.orcamento textarea{
+
+background:#111;
+
+border:1px solid #333;
+
+padding:15px;
+
+border-radius:8px;
+
+color:white;
+
+font-size:16px;
+
+}
+
+
+
+.orcamento textarea{
+
+height:150px;
+
+resize:none;
+
+}
+
+
+
+.orcamento input:focus,
+.orcamento select:focus,
+.orcamento textarea:focus{
+
+outline:none;
+
+border-color:#d4af37;
+
+}
