@@ -107,3 +107,28 @@ display:flex;
 justify-content:center;
 
 }
+.depoimentos{
+
+background:#0b0b0b;
+
+text-align:center;
+
+}
+
+
+.depoimentos .card p{
+
+font-style:italic;
+
+color:#ddd;
+
+margin-bottom:20px;
+
+}
+
+
+.depoimentos .card h3{
+
+font-size:16px;
+
+}
