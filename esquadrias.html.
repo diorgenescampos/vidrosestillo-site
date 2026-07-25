@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Esquadrias de Alumínio | Vidrosestillo</title>
+
+<meta name="description" content="Esquadrias de alumínio sob medida com qualidade e acabamento premium em Imbé e região. Vidrosestillo.">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<section class="orcamento">
+
+
+<div class="container">
+
+
+<h1>
+Esquadrias de Alumínio
+</h1>
+
+
+<p>
+Portas e janelas em alumínio desenvolvidas sob medida, oferecendo resistência, segurança e beleza para seu imóvel.
+</p>
+
+
+
+<div class="fotos">
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea" alt="Esquadrias de alumínio">
+
+<h3>
+Portas e janelas de alumínio
+</h3>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Janela moderna">
+
+<h3>
+Acabamento moderno
+</h3>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154" alt="Esquadria residencial">
+
+<h3>
+Projetos sob medida
+</h3>
+
+</div>
+
+
+</div>
+
+
+
+<a class="btn"
+
+href="https://wa.me/5551995326229?text=Olá%20Vidrosestillo,%20gostaria%20de%20um%20orçamento%20de%20Esquadrias%20de%20Alumínio."
+
+target="_blank">
+
+Solicitar orçamento
+
+</a>
+
+
+
+<br><br>
+
+
+
+<a class="btn" href="index.html">
+
+Voltar ao site
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+</body>
+
+</html>
