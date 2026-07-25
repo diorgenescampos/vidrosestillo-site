@@ -31,15 +31,12 @@ Solicite seu orçamento
 
 
 <p>
-Preencha os dados abaixo e nossa equipe entrará em contato.
+Preencha os dados abaixo e fale diretamente com nossa equipe.
 </p>
 
 
 
-<form 
-action="https://formsubmit.co/SEU_EMAIL"
-method="POST"
-enctype="multipart/form-data">
+<form id="formOrcamento">
 
 
 <input 
@@ -158,6 +155,62 @@ Voltar ao site
 </div>
 
 </section>
+
+
+
+
+<script>
+
+
+document
+.getElementById("formOrcamento")
+.addEventListener("submit", function(e){
+
+
+e.preventDefault();
+
+
+
+let nome = document.querySelector('[name="nome"]').value;
+
+
+let telefone = document.querySelector('[name="telefone"]').value;
+
+
+let servico = document.querySelector('[name="servico"]').value;
+
+
+let mensagem = document.querySelector('[name="mensagem"]').value;
+
+
+
+let texto = 
+`Olá Vidrosestillo!
+
+Meu nome é: ${nome}
+
+Meu WhatsApp é: ${telefone}
+
+Tenho interesse em: ${servico}
+
+Detalhes do projeto:
+${mensagem}`;
+
+
+
+let link = 
+"https://wa.me/5551995326229?text=" 
++ encodeURIComponent(texto);
+
+
+
+window.open(link, "_blank");
+
+
+});
+
+
+</script>
 
 
 
