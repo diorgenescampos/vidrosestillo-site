@@ -52,3 +52,13 @@ rodape.innerHTML =
 "© " + ano + " Vidrosestillo - Vidros e Esquadrias Premium";
 
 }
+const botaoMenu = document.querySelector(".menu-mobile");
+
+const menu = document.querySelector(".menu");
+
+
+botaoMenu.addEventListener("click",()=>{
+
+menu.classList.toggle("ativo");
+
+});
