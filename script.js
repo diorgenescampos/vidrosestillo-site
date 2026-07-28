@@ -62,3 +62,56 @@ botaoMenu.addEventListener("click",()=>{
 menu.classList.toggle("ativo");
 
 });
+// ===============================
+// LIGHTBOX DA GALERIA
+// ===============================
+
+const imagensGaleria = document.querySelectorAll(".galeria-grid img");
+const lightbox = document.getElementById("lightbox");
+const imagemAmpliada = document.getElementById("imagem-ampliada");
+const fecharLightbox = document.querySelector(".fechar-lightbox");
+
+if (imagensGaleria.length && lightbox && imagemAmpliada && fecharLightbox) {
+
+    imagensGaleria.forEach((img) => {
+
+        img.addEventListener("click", () => {
+
+            imagemAmpliada.src = img.src;
+            imagemAmpliada.alt = img.alt;
+
+            lightbox.classList.add("ativo");
+
+        });
+
+    });
+
+    fecharLightbox.addEventListener("click", () => {
+
+        lightbox.classList.remove("ativo");
+
+    });
+
+    lightbox.addEventListener("click", (e) => {
+
+        if (e.target === lightbox) {
+
+            lightbox.classList.remove("ativo");
+
+        }
+
+    });
+
+    document.addEventListener("keydown", (e) => {
+
+        if (e.key === "Escape") {
+
+            lightbox.classList.remove("ativo");
+
+        }
+
+    });
+
+}
+
+
