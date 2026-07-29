@@ -335,12 +335,19 @@ footer{
 }
 
 .galeria-grid img{
-    width:100%;
-    height:260px;
-    object-fit:cover;
-    border-radius:12px;
-    cursor:pointer;
-    transition:transform .35s ease, box-shadow .35s ease;
+
+width:100%;
+
+aspect-ratio:4/3;
+
+object-fit:cover;
+
+border-radius:12px;
+
+transition:.4s;
+
+cursor:pointer;
+
 }
 
 .galeria-grid img:hover{
